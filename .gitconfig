@@ -12,4 +12,4 @@
         cm = commit -m
         st = status
         lg = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-                                                        co = checkout
+        co = checkout
