@@ -724,17 +724,12 @@ function upgrade() {
   sudo apt autoremove -y
   asdf update
   asdf plugin-update --all
-  asdf local rust nightly
-  alacritty-install
-  popd
-  asdf uninstall neovim nightly
-  asdf install neovim nightly
-  asdf global neovim nightly
   update_dotfiles
+  cd
 }
 
 function update_dotfiles() {
-  local date={$date}
+  local date=date
   # update ~/.zshrc
   cp ~/.zshrc ~/dotfiles
   # update ~/.tmux.conf
