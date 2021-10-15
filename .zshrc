@@ -724,22 +724,17 @@ function upgrade() {
   sudo apt autoremove -y
   asdf update
   asdf plugin-update --all
-  pushd .
-  cd ~/dotfiles
-  git pull
-  popd
-  pushd .
-  cd ~/src/lib/alacritty
-  git pull
   asdf local rust nightly
   alacritty-install
   popd
   asdf uninstall neovim nightly
   asdf install neovim nightly
   asdf global neovim nightly
+  update_dotfiles
 }
 
 function update_dotfiles() {
+  local date={$date}
   # update ~/.zshrc
   cp ~/.zshrc ~/dotfiles
   # update ~/.tmux.conf
@@ -752,6 +747,11 @@ function update_dotfiles() {
   cp -r ~/.config/nvim/doc ~/dotfiles/.config/nvim
   cp ~/.config/nvim/init.vim ~/dotfiles/.config/nvim
   cp ~/.config/nvim/coc-settings.json ~/dotfiles/.config/nvim
+  # push git repo of dotfiles
+  cd ~/dotfiles
+  git add .
+  git commit -m $date
+  git push
 }
 
 # Alacritty Helpers
