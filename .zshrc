@@ -729,7 +729,7 @@ function upgrade() {
 }
 
 function update_dotfiles() {
-  local date=date
+  local NOW=$date
   # update ~/.zshrc
   cp ~/.zshrc ~/dotfiles
   # update ~/.tmux.conf
@@ -745,7 +745,7 @@ function update_dotfiles() {
   # push git repo of dotfiles
   cd ~/dotfiles
   git add .
-  git commit -m $date
+  git commit -m {$NOW}
   git push
 }
 
