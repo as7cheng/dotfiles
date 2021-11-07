@@ -557,6 +557,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # Common shortcuts for source file and virtualenv
+alias gcr='google-chrome'
 alias fz='nvim ~/.zshrc'
 alias c='cat'
 alias sr='source'
@@ -599,6 +600,9 @@ alias glg='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
 alias glga='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short --all'
 alias gad='git add'
 alias gt='git tag'
+alias grm='git rm --cached'
+alias gcl='git clone'
+alias gremote='git remote add origin'
 
 # battery
 alias battery='upower -i /org/freedesktop/UPower/devices/battery_BAT0| grep -E "state|time\ to\ full|percentage"'

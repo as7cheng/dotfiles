@@ -2,14 +2,9 @@
 	name = Shihan Cheng
 	email = shihan.cheng@columbia.edu
 [core]
-	autocrlf = input
+	autocrlf = false
 	safecrlf = true
 	editor = nvim
 [init]
-      defaultBranch = main
-[alias]
-	i = init
-        cm = commit -m
-        st = status
-        lg = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-        co = checkout
+	defaultBranch = main
+
