@@ -634,6 +634,9 @@ alias poetry-clean='poetry cache:clear --all pypi'
 alias py='nvim -c "silent! normal! ggdG" -c "ReplToggle" /tmp/repl.py'
 alias pycache-clean='find . -name "*.pyc" -delete'
 
+# Poetry
+alias pr='poetry run'
+
 # }}}
 # General: functions {{{
 
