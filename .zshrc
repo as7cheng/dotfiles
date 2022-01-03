@@ -602,7 +602,9 @@ alias gad='git add'
 alias gt='git tag'
 alias grm='git rm --cached'
 alias gcl='git clone'
+alias gbc='git branch'
 alias gremote='git remote add origin'
+alias grt='git revert'
 
 # battery
 alias battery='upower -i /org/freedesktop/UPower/devices/battery_BAT0| grep -E "state|time\ to\ full|percentage"'
