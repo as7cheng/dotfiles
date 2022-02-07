@@ -2341,4 +2341,3 @@ packadd defx-git
 packadd defx-icons
 
 " }}}
-" Samuel Roeca's '~/.config/nvim/init.vim'. Toggle folds with 'za'.i
