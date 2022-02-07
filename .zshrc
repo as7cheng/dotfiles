@@ -743,7 +743,7 @@ function upgrade() {
 function update_dotfiles() {
   local NOW=$(date)
   # update ~/.zshrc
-  cp ~/.zshrc ~/dotfiles
+  # cp ~/.zshrc ~/dotfiles
   # update ~/.tmux.conf
   cp ~/.tmux.conf ~/dotfiles
   # update alacritty
